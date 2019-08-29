@@ -29,6 +29,18 @@ namespace Calculator.Test.Unit
             //Assert
             Assert.That(returnValue, Is.EqualTo(EXPECTED_RETURNVALUE));
         }
+        public void Substract_Sub2From5_return3()
+        {
+            const int EXPECTED_RETURNVALUE = 3;
+            //Using AAA pattern
+
+            //Arrange in setup
+
+            //Act
+            double returnValue = uut.Substract(5, 2);
+            //Assert
+            Assert.That(returnValue, Is.EqualTo(EXPECTED_RETURNVALUE));
+        }
         [Test]
         public void Meme_x_and_y_gives_yx()
         {
