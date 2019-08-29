@@ -10,14 +10,20 @@ namespace Calculator.Test.Unit
     [TestFixture]
     public class CalculatorTest
     {
+        private Calculator uut;
+        [SetUp]
+        public void Setup()
+        {
+            uut = new Calculator();
+        }
         [Test]
         public void Add_AddOneToOne_return2()
         {
             const int EXPECTED_RETURNVALUE = 2;
             //Using AAA pattern
 
-            //Arrange
-            var uut = new Calculator();
+            //Arrange in setup
+
             //Act
             double returnValue = uut.Add(1, 1);
             //Assert
