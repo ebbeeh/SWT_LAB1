@@ -42,13 +42,12 @@ namespace Calculator.Test.Unit
             Assert.That(returnValue, Is.EqualTo(EXPECTED_RETURNVALUE));
         }
         [Test]
-        public void Meme_x_and_y_gives_yx()
+        public void Meme_xMemedWithy_gives_yx()
         {
             const string EXPECTED_RETURNVALUE = "yx";
             //Using AAA pattern
 
             //Arrange
-            var uut = new Calculator();
             //Act
             string returnValue = uut.Meme('x', 'y');
             //Assert
