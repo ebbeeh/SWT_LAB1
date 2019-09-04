@@ -21,9 +21,9 @@ namespace Calculator
         {
             return a * b;
         }
-        public double Power(double x)
+        public double Power(double x, double exp)
         {
-            return Math.Exp(x);
+            return Math.Pow(x, exp);
         }
 
         public string Swap2Chars(char x, char y)

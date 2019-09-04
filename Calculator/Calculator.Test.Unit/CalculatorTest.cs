@@ -29,7 +29,8 @@ namespace Calculator.Test.Unit
             //Assert
             Assert.That(returnValue, Is.EqualTo(EXPECTED_RETURNVALUE));
         }
-        public void Substract_Sub2From5_return3()
+        [Test]
+        public void Subtract_Sub2From5_return3()
         {
             const int EXPECTED_RETURNVALUE = 3;
             //Using AAA pattern
@@ -42,7 +43,59 @@ namespace Calculator.Test.Unit
             Assert.That(returnValue, Is.EqualTo(EXPECTED_RETURNVALUE));
         }
         [Test]
-        public void swap_xySwapped_returnyx()
+        public void Multiply_Multi2and2_return4()
+        {
+            const int EXPECTED_RETURNVALUE = 4;
+            //Using AAA pattern
+
+            //Arrange in setup
+
+            //Act
+            double returnValue = uut.Multiply(2, 2);
+            //Assert
+            Assert.That(returnValue, Is.EqualTo(EXPECTED_RETURNVALUE));
+        }
+        [Test]
+        public void Power_2tothePowerof4_return16()
+        {
+            const int EXPECTED_RETURNVALUE = 16;
+            //Using AAA pattern
+
+            //Arrange in setup
+
+            //Act
+            double returnValue = uut.Power(2,4);
+            //Assert
+            Assert.That(returnValue, Is.EqualTo(EXPECTED_RETURNVALUE));
+        }
+        [Test]
+        public void Power_3tothePowerof2_return9()
+        {
+            const int EXPECTED_RETURNVALUE = 9;
+            //Using AAA pattern
+
+            //Arrange in setup
+
+            //Act
+            double returnValue = uut.Power(3, 2);
+            //Assert
+            Assert.That(returnValue, Is.EqualTo(EXPECTED_RETURNVALUE));
+        }
+        [Test]
+        public void Power_9tothePowerof13_return2541865828329()
+        {
+            const double EXPECTED_RETURNVALUE = 2541865828329;
+            //Using AAA pattern
+
+            //Arrange in setup
+
+            //Act
+            double returnValue = uut.Power(9, 13);
+            //Assert
+            Assert.That(returnValue, Is.EqualTo(EXPECTED_RETURNVALUE));
+        }
+        [Test]
+        public void Swap_xySwapped_returnyx()
         {
             const string EXPECTED_RETURNVALUE = "yx";
             //Using AAA pattern
@@ -54,7 +107,7 @@ namespace Calculator.Test.Unit
             Assert.That(returnValue, Is.EqualTo(EXPECTED_RETURNVALUE));
         }
         [Test]
-        public void swap_yxSwapped_returnxy()
+        public void Swap_yxSwapped_returnxy()
         {
             const string EXPECTED_RETURNVALUE = "xy";
             //Using AAA pattern
@@ -66,7 +119,7 @@ namespace Calculator.Test.Unit
             Assert.That(returnValue, Is.EqualTo(EXPECTED_RETURNVALUE));
         }
         [Test]
-        public void swap_PxSwapped_returnxP()
+        public void Swap_PxSwapped_returnxP()
         {
             const string EXPECTED_RETURNVALUE = "xP";
             //Using AAA pattern
