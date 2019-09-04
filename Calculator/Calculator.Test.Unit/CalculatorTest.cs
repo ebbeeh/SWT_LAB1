@@ -95,6 +95,30 @@ namespace Calculator.Test.Unit
             Assert.That(returnValue, Is.EqualTo(EXPECTED_RETURNVALUE));
         }
         [Test]
+        public void Divide_4dividedby4_return1()
+        {
+            const double EXPECTED_RETURNVALUE = 1;
+            //Using AAA pattern
+
+            //Arrange
+            //Act
+            double returnValue = uut.Divide(4, 4);
+            //Assert
+            Assert.That(returnValue, Is.EqualTo(EXPECTED_RETURNVALUE));
+        }
+        [Test]
+        public void Divide_12dividedby2_return6()
+        {
+            const double EXPECTED_RETURNVALUE = 6;
+            //Using AAA pattern
+
+            //Arrange
+            //Act
+            double returnValue = uut.Divide(12, 2);
+            //Assert
+            Assert.That(returnValue, Is.EqualTo(EXPECTED_RETURNVALUE));
+        }
+        [Test]
         public void Swap_xySwapped_returnyx()
         {
             const string EXPECTED_RETURNVALUE = "yx";

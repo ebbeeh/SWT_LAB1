@@ -25,6 +25,11 @@ namespace Calculator
         {
             return Math.Pow(x, exp);
         }
+        public double Divide(double dividend, double divisor)
+        {
+            return (dividend / divisor);
+        }
+
 
         public string Swap2Chars(char x, char y)
         {
