@@ -9,8 +9,9 @@ namespace Calculator
     public interface ICalculator
     {
         double Add(double a, double b);
-        double Substract(double a, double b);
+        double Subtract(double a, double b);
         double Multiply(double a, double b);
         double Power(double x);
+        string Swap2Chars(char x, char y);
     }
 }

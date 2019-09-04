@@ -13,7 +13,7 @@ namespace Calculator
         {
             return a + b;
         }
-        public double Substract(double a, double b)
+        public double Subtract(double a, double b)
         {
             return a - b;
         }
@@ -26,7 +26,7 @@ namespace Calculator
             return Math.Exp(x);
         }
 
-        public string Meme(char x, char y)
+        public string Swap2Chars(char x, char y)
         {
             string satsammen = string.Concat(y, x);
             return satsammen;

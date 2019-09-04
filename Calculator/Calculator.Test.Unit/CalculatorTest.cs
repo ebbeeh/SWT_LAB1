@@ -37,19 +37,43 @@ namespace Calculator.Test.Unit
             //Arrange in setup
 
             //Act
-            double returnValue = uut.Substract(5, 2);
+            double returnValue = uut.Subtract(5, 2);
             //Assert
             Assert.That(returnValue, Is.EqualTo(EXPECTED_RETURNVALUE));
         }
         [Test]
-        public void Meme_xMemedWithy_gives_yx()
+        public void swap_xySwapped_returnyx()
         {
             const string EXPECTED_RETURNVALUE = "yx";
             //Using AAA pattern
 
             //Arrange
             //Act
-            string returnValue = uut.Meme('x', 'y');
+            string returnValue = uut.Swap2Chars('x', 'y');
+            //Assert
+            Assert.That(returnValue, Is.EqualTo(EXPECTED_RETURNVALUE));
+        }
+        [Test]
+        public void swap_yxSwapped_returnxy()
+        {
+            const string EXPECTED_RETURNVALUE = "xy";
+            //Using AAA pattern
+
+            //Arrange
+            //Act
+            string returnValue = uut.Swap2Chars('y', 'x');
+            //Assert
+            Assert.That(returnValue, Is.EqualTo(EXPECTED_RETURNVALUE));
+        }
+        [Test]
+        public void swap_PxSwapped_returnxP()
+        {
+            const string EXPECTED_RETURNVALUE = "xP";
+            //Using AAA pattern
+
+            //Arrange
+            //Act
+            string returnValue = uut.Swap2Chars('P', 'x');
             //Assert
             Assert.That(returnValue, Is.EqualTo(EXPECTED_RETURNVALUE));
         }
