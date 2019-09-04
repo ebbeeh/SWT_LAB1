@@ -48,6 +48,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CalculatorTest.cs" />
+    <Compile Include="CalculatorTests_Power.cs" />
+    <Compile Include="CalculatorTests_Swap.cs" />
+    <Compile Include="CalculatorTests_Divide.cs" />
+    <Compile Include="CalculatorTests_Multiply.cs" />
+    <Compile Include="CalculatorTests_Subtract.cs" />
     <Compile Include="CalculatorTests_add.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

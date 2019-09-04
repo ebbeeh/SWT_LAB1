@@ -9,7 +9,7 @@ namespace Calculator.Test.Unit
 {
 
     [TestFixture]
-    class CalculatorTests_add
+    class CalculatorTests_Power
     {
         private Calculator uut;
         [SetUp]
@@ -18,12 +18,11 @@ namespace Calculator.Test.Unit
             uut = new Calculator();
         }
         [TestCase(2, 2, 4)]
-        [TestCase(4, 4, 8)]
-        [TestCase(1, 1, 2)]
-        [TestCase(10, 10, 20)]
-        public void Test_AddPossitiveNumbers(int a, int b, int result)
+        [TestCase(0, 3, 0)]
+        [TestCase(3, 3, 27)]
+        public void Test_Power(double a, double b, double result)
         {
-            Assert.That(result, Is.EqualTo(uut.Add(a, b)));
+            Assert.That(result, Is.EqualTo(uut.Power(a, b)));
         }
     }
 }

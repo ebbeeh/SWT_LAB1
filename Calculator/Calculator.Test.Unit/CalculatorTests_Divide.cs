@@ -9,7 +9,7 @@ namespace Calculator.Test.Unit
 {
 
     [TestFixture]
-    class CalculatorTests_add
+    class CalculatorTests_Divide
     {
         private Calculator uut;
         [SetUp]
@@ -17,13 +17,13 @@ namespace Calculator.Test.Unit
         {
             uut = new Calculator();
         }
-        [TestCase(2, 2, 4)]
-        [TestCase(4, 4, 8)]
-        [TestCase(1, 1, 2)]
-        [TestCase(10, 10, 20)]
-        public void Test_AddPossitiveNumbers(int a, int b, int result)
+        [TestCase(2, 2, 1)]
+        [TestCase(30, 3, 10)]
+        [TestCase(20, 5, 4)]
+        [TestCase(9, 3, 3)]
+        public void Test_Divide(double a, double b, double result)
         {
-            Assert.That(result, Is.EqualTo(uut.Add(a, b)));
+            Assert.That(result, Is.EqualTo(uut.Divide(a, b)));
         }
     }
 }
