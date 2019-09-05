@@ -27,6 +27,10 @@ namespace Calculator
         }
         public double Divide(double dividend, double divisor)
         {
+            if (divisor==0)
+            {
+                throw new CalculatorEx.DivideByZeroException();
+            }
             return accum = (dividend / divisor);
         }
         public double Add(double a)

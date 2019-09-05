@@ -25,6 +25,13 @@ namespace Calculator.Test.Unit
         {
             Assert.That(result, Is.EqualTo(uut.Divide(a, b)));
         }
+        
+        [Test]
+        public void Test_DivideByZero()
+        {
+            Assert.That(()=>uut.Divide(10,0),Throws.TypeOf<CalculatorEx.DivideByZeroException>());
+        }
+
 
         [TestCase(4, 5)]
         [TestCase(2, 10)]
