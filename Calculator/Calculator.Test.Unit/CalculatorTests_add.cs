@@ -25,5 +25,6 @@ namespace Calculator.Test.Unit
         {
             Assert.That(result, Is.EqualTo(uut.Add(a, b)));
         }
+
     }
 }

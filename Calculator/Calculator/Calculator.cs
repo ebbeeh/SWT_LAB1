@@ -11,30 +11,58 @@ namespace Calculator
     {
         public double Add(double a, double b)
         {
-            return a + b;
+            return accum = a + b;
         }
         public double Subtract(double a, double b)
         {
-            return a - b;
+            return accum = a - b;
         }
         public double Multiply(double a, double b)
         {
-            return a * b;
+            return accum = a * b;
         }
         public double Power(double x, double exp)
         {
-            return Math.Pow(x, exp);
+            return accum = Math.Pow(x, exp);
         }
         public double Divide(double dividend, double divisor)
         {
-            return (dividend / divisor);
+            return accum = (dividend / divisor);
+        }
+        public double Add(double a)
+        {
+            return accum += a;
         }
 
+        public double Subtract(double a)
+        {
+            return accum -= a;
+        }
 
+        public double Multiply(double a)
+        {
+            return accum *= a;
+        }
+
+        public double Power(double x)
+        {
+            return accum = Math.Pow(accum, x);
+        }
+
+        public double Divide(double divisor)
+        {
+            return accum /= divisor;
+        }
         public string Swap2Chars(char x, char y)
         {
             string satsammen = string.Concat(y, x);
             return satsammen;
+        }
+        public double accum { get; private set; }
+
+        public void Clear()
+        {
+            accum = 0;
         }
     }
 }
