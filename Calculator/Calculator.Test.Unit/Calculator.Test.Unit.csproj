@@ -47,7 +47,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CalculatorTest.cs" />
     <Compile Include="CalculatorTests_Power.cs" />
     <Compile Include="CalculatorTests_Swap.cs" />
     <Compile Include="CalculatorTests_Divide.cs" />

@@ -25,5 +25,14 @@ namespace Calculator.Test.Unit
         {
             Assert.That(result, Is.EqualTo(uut.Subtract(a, b)));
         }
+
+        [TestCase(50, 0)]
+        [TestCase(0, 50)]
+        [TestCase(-50, 100)]
+        public void Test_Subtract(int a, int result)
+        {
+            uut.Add(50);
+            Assert.That(result, Is.EqualTo(uut.Subtract(a)));
+        }
     }
 }

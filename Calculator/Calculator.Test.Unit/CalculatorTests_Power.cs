@@ -24,5 +24,14 @@ namespace Calculator.Test.Unit
         {
             Assert.That(result, Is.EqualTo(uut.Power(a, b)));
         }
+
+        [TestCase(2, 25)]
+        [TestCase(1, 5)]
+        [TestCase(0, 1)]
+        public void Test_Power(double a, double result)
+        {
+            uut.Add(5);
+            Assert.That(result, Is.EqualTo(uut.Power(a)));
+        }
     }
 }

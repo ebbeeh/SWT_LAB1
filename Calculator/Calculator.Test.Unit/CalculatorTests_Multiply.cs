@@ -25,5 +25,13 @@ namespace Calculator.Test.Unit
         {
             Assert.That(result, Is.EqualTo(uut.Multiply(a, b)));
         }
+        [TestCase(3, 60)]
+        [TestCase(1, 20)]
+        [TestCase(0, 0)]
+        public void Test_Multiply(double a, double result)
+        {
+            uut.Add(20);
+            Assert.That(result, Is.EqualTo(uut.Multiply(a)));
+        }
     }
 }

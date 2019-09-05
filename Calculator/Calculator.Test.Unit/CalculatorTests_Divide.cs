@@ -25,5 +25,15 @@ namespace Calculator.Test.Unit
         {
             Assert.That(result, Is.EqualTo(uut.Divide(a, b)));
         }
+
+        [TestCase(4, 5)]
+        [TestCase(2, 10)]
+        [TestCase(20, 1)]
+        //TODO: Test divide by zero exception
+        public void Test_Divide(double a, double result)
+        {
+            uut.Add(20);
+            Assert.That(result, Is.EqualTo(uut.Divide(a)));
+        }
     }
 }
