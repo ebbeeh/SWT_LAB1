@@ -26,5 +26,15 @@ namespace Calculator.Test.Unit
             Assert.That(result, Is.EqualTo(uut.Add(a, b)));
         }
 
+        [TestCase(2, 22)]
+        [TestCase(0, 20)]
+        [TestCase(-10, 10)]
+
+        public void Test_AddPossitiveNumbersWAccum(int a, int result)
+        {
+            uut.Add(20);
+            Assert.That(result, Is.EqualTo(uut.Add(a)));
+        }
+
     }
 }
