@@ -33,5 +33,11 @@ namespace Calculator.Test.Unit
             uut.Add(5);
             Assert.That(result, Is.EqualTo(uut.Power(a)));
         }
+
+        [Test]
+        public void Test_NegativeBase()
+        {
+            Assert.That(() => uut.Power(-1, 20), Throws.TypeOf<CalculatorEx.NegativeBase>());
+        }
     }
 }

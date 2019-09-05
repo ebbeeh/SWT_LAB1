@@ -23,6 +23,10 @@ namespace Calculator
         }
         public double Power(double x, double exp)
         {
+            if (x < 0)
+            {
+                throw new CalculatorEx.NegativeBase();
+            }
             return accum = Math.Pow(x, exp);
         }
         public double Divide(double dividend, double divisor)

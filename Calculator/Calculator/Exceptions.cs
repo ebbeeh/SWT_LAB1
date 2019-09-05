@@ -13,4 +13,12 @@ namespace CalculatorEx
 
         }
     }
+
+    public class NegativeBase : Exception
+    {
+        public NegativeBase()
+        {
+
+        }
+    }
 }
